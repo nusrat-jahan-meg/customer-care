@@ -2,7 +2,7 @@ import React, { use } from 'react';
 import TicketCard from './TicketCard';
 import TaskStatus from './TaskStatus';
 
-const CustomerTickets = ({loadServiceData,handleAddToCart}) => {
+const CustomerTickets = ({loadServiceData,handleAddToCart,handleResolved,resolved,cart }) => {
     const services =use (loadServiceData)
     console.log(services);
     return (
@@ -17,11 +17,14 @@ const CustomerTickets = ({loadServiceData,handleAddToCart}) => {
         </div>
         <div className='p-2'>
         <h2 className='text-lg  font-bold text-gray-500'>Task Status</h2> 
-        <p> Select a ticket to add to Task status</p>
-       <div className='space-y-3 p-2 shadow bg-amber-100 rounded-2xl'>
-         {
-            services.map(service=> <TaskStatus key={service.id} service ={service} ></TaskStatus>)
-        }
+      
+       <div className='space-y-3 p-2 shadow '>
+
+         <TaskStatus 
+  cart={cart}
+  handleResolved={handleResolved}
+  resolved={resolved}
+/>
        </div>
         </div>
         </div>

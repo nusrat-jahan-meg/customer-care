@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Banner = ({cart}) => {
+const Banner = ({cart,resolved}) => {
   return (
     <div className="p-8">
       
@@ -22,7 +22,7 @@ const Banner = ({cart}) => {
             <h2 className="text-4xl md:text-5xl font-semibold">
               Resolved
             </h2>
-            <span className="text-3xl md:text-4xl font-bold">0</span>
+          <span className="text-3xl md:text-4xl font-bold">{resolved}</span>
           </div>
         </div>
 

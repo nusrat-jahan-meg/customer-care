@@ -11,15 +11,30 @@ function App() {
 const [progress ,setProgress]= useState([]);
 const [resolved,setResolved] =useState([]);
 const [cart,setCart] =useState([]);
+  const [services, setServices] = useState([]);
 
 const handleAddToCart = (service)=> {
-  alert("add this")
+  if (cart.some(item => item.id === service.id)) {
+      alert("This ticket is already in progress!");
+      return;
+    }
+    if (resolved.some(item => item.id === service.id)) {
+      alert("This ticket is already resolved!");
+      return;
+    }
   const newCart =[...cart,service]
   setCart(newCart);
+  setServices(services.filter(s=>s.id !==service.id ))
 }
-// const handleCart  =() => {
+const handleResolved  =(solve) => {
+  const updateCart = cart.filter(
+    item=> item.id !== solve.id
+  )
+  setCart(updateCart);
+ const newResolve =[...resolved,solve];
+ setResolved(newResolve);
 
-// }
+}
 
   return (
     <>
@@ -29,13 +44,13 @@ const handleAddToCart = (service)=> {
         <Navbar></Navbar>
     </div>
     <div>
-      <Banner cart ={cart.length} ></Banner>
+      <Banner cart ={cart.length} resolved ={resolved.length} ></Banner>
     </div>
       <div>
         {/* <TicketCard></TicketCard> */}
       </div>
       <div>
-        <CustomerTickets loadServiceData ={loadServiceData}  handleAddToCart ={ handleAddToCart} />
+        <CustomerTickets   loadServiceData ={loadServiceData}  handleAddToCart ={ handleAddToCart} handleResolved  = {handleResolved } resolved ={resolved} cart={cart} />
       </div>
      </div>
     </>
