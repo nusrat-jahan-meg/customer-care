@@ -1,0 +1,137 @@
+[
+  {
+    "id": 111,
+    "title": "Login page not working",
+    "description": "User unable to login with correct credentials.",
+    "customer": "Rahim Uddin",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2026-03-01"
+  },
+  {
+    "id": 1232,
+    "title": "Payment gateway error",
+    "description": "Payment fails during checkout process.",
+    "customer": "Nusrat Jahan",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-02"
+  },
+  {
+    "id": 4663,
+    "title": "Profile image upload issue",
+    "description": "Image upload button not responding.",
+    "customer": "Karim Ahmed",
+    "priority": "Medium",
+    "status": "Resolved",
+    "createdAt": "2026-02-28"
+  },
+  {
+    "id":234,
+    "title": "Dashboard loading slow",
+    "description": "Dashboard takes more than 10 seconds to load.",
+    "customer": "Tanvir Hasan",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2026-03-01"
+  },
+  {
+    "id": 675,
+    "title": "Forgot password email not sent",
+    "description": "Users not receiving reset password email.",
+    "customer": "Sadia Khan",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-03"
+  },
+  {
+    "id": 566,
+    "title": "Search feature not filtering",
+    "description": "Search results show incorrect data.",
+    "customer": "Imran Ali",
+    "priority": "Low",
+    "status": "Resolved",
+    "createdAt": "2026-02-25"
+  },
+  {
+    "id": 567,
+    "title": "Mobile view layout broken",
+    "description": "Website layout breaks on small screens.",
+    "customer": "Mim Akter",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2026-03-02"
+  },
+  {
+    "id": 908,
+    "title": "Notification not showing",
+    "description": "Push notifications are not appearing.",
+    "customer": "Rafiul Islam",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2026-03-01"
+  },
+  {
+    "id": 459,
+    "title": "Error 500 on reports page",
+    "description": "Server error appears while opening reports.",
+    "customer": "Shila Akter",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2026-03-03"
+  },
+  {
+    "id": 110,
+    "title": "Data export not working",
+    "description": "CSV export button does not download file.",
+    "customer": "Arif Hossain",
+    "priority": "Medium",
+    "status": "Resolved",
+    "createdAt": "2026-02-27"
+  },
+  {
+    "id": 311,
+    "title": "Settings page crash",
+    "description": "App crashes when opening settings.",
+    "customer": "Faria Rahman",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-04"
+  },
+  {
+    "id": 512,
+    "title": "Language switch not updating",
+    "description": "Language change does not apply instantly.",
+    "customer": "Sabbir Ahmed",
+    "priority": "Low",
+    "status": "Resolved",
+    "createdAt": "2026-02-26"
+  },
+  {
+    "id": 613,
+    "title": "API response delay",
+    "description": "API takes too long to respond.",
+    "customer": "Jannat Islam",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2026-03-02"
+  },
+  {
+    "id": 814,
+    "title": "Incorrect invoice calculation",
+    "description": "Total price calculated incorrectly.",
+    "customer": "Mahmudul Hasan",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-03-03"
+  },
+  {
+    "id": 915,
+    "title": "Broken link in footer",
+    "description": "Privacy policy link not working.",
+    "customer": "Rima Chowdhury",
+    "priority": "Low",
+    "status": "Resolved",
+    "createdAt": "2026-02-24"
+  }
+]
