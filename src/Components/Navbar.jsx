@@ -24,20 +24,9 @@ const Navbar = () => {
            <li> <a href="#">Contact</a></li>
       </ul>
     </div>
-    <h2 className="btn btn-ghost text-xl">CS — Ticket System</h2>
+    <h2 className=" text-xl font-bold">CS — Ticket System</h2>
   </div>
-  {/* <div className=" navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
-  <li> <a href="#">Home</a></li>
-        <li>
-          <a href="#">FAQ</a>
-        </li>
-        <li> <a href="#">Changelog</a></li>
-         <li> <a href="#">Blog</a></li>
-          <li> <a href="#">Download</a></li>
-           <li> <a href="#">Contact</a></li>
-    </ul>
-  </div> */}
+  
   <div className="navbar-end">
     {/*  */}
    <div className="  hidden lg:flex">

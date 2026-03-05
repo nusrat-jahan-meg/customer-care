@@ -8,7 +8,7 @@ const CustomerTickets = ({loadServiceData,handleAddToCart,handleResolved,resolve
     return (
         <div className='flex justify-between flex-1 p-4'>
         <div>
-         <h2 className='text-lg font-bold text-gray-500  '>Customer Tickets</h2>
+         <h2 className='text-lg font-bold text-gray-500 mb-3 '>Customer Tickets</h2>
         <div className='grid grid-cols-2 gap-5 rounded-2xl '>
              {
             services.map(service =><TicketCard key={service.id} service ={service}  handleAddToCart ={handleAddToCart} ></TicketCard> )
@@ -16,7 +16,7 @@ const CustomerTickets = ({loadServiceData,handleAddToCart,handleResolved,resolve
         </div>
         </div>
         <div className='p-2'>
-        <h2 className='text-lg  font-bold text-gray-500'>Task Status</h2> 
+        <h2 className='text-lg  mb-3 font-bold text-gray-500'>Task Status</h2> 
       
        <div className='space-y-3 p-2 shadow '>
 
